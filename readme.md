@@ -1,4 +1,4 @@
-##Distributed training with ray
+## Distributed training with ray
 
 It is a part of Ray's code. The full ray can checkout `tf` branch.
 
@@ -7,7 +7,7 @@ After you install ray with pip, you can replace or change the files under dir `.
 
 And the `example` contains both tensorflow's and pytorch's examples.
 
-####Run `tensorflow` example with command
+#### Run `tensorflow` example with command
 
 `python tensorflow_train_example.py -n 2 --hadoop_conf $HADOOP_CONF_DIR/`
 
@@ -17,7 +17,7 @@ And the `example` contains both tensorflow's and pytorch's examples.
 
 Also, you can add `--batch_size` to set batch size, the default value is 128.
  
-####Run `pytorch` example with command
+#### Run `pytorch` example with command
 `python train_example.py -n 2 --hadoop_conf $HADOOP_CONF_DIR/`
 
 `-n` is the number of node you you want to use.
