@@ -88,7 +88,7 @@ def train_example(num_replicas=1, batch_size=128, use_gpu=False):
         num_replicas=num_replicas,
         use_gpu=use_gpu,
         verbose=True,
-        config=create_config(batch_size))
+        config=create_config(batch_size*num_replicas))
 
     train_stats1 = trainer.train()
     train_stats1.update(trainer.validate())
